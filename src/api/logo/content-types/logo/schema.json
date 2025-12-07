@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logos",
+  "info": {
+    "singularName": "logo",
+    "pluralName": "logos",
+    "displayName": "Logos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "company": {
+      "type": "string"
+    },
+    "imageDark": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

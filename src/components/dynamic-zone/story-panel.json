@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_dynamic_zone_story_panels",
+  "info": {
+    "displayName": "Story_Panel"
+  },
+  "options": {},
+  "attributes": {
+    "storys": {
+      "type": "component",
+      "component": "shared.story-panel-shared",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::logo.logo"
+    },
+    "description": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "designed_developed_by": {
+      "type": "string"
+    },
+    "built_with": {
+      "type": "string"
+    },
+    "internal_links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "policy_links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "social_networks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-network.social-network"
+    }
+  }
+}

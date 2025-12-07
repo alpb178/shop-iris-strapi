@@ -1,0 +1,52 @@
+{
+  "name": "shop-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Shop CMS",
+  "scripts": {
+    "develop": "npx strapi develop",
+    "start": "npx strapi start",
+    "build": "npx strapi build",
+    "build:skip": "echo 'Skipping build for production'",
+    "strapi": "npx strapi",
+    "deploy": "npx strapi deploy",
+    "seed": "npx strapi import -f ./data/export_20250116105447.tar.gz",
+    "postinstall": "node -e \"if(require('fs').existsSync('./scripts/updateUuid.js')) require('./scripts/updateUuid.js')\""
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@offset-dev/strapi-calendar": "^1.0.0",
+    "@strapi/plugin-cloud": "5.17.0",
+    "@strapi/plugin-seo": "^2.0.4",
+    "@strapi/plugin-users-permissions": "5.17.0",
+    "@strapi/provider-upload-cloudinary": "^5.20.0",
+    "@strapi/strapi": "5.17.0",
+    "better-sqlite3": "11.7.0",
+    "googleapis": "^156.0.0",
+    "patch-package": "^8.0.0",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.9.1",
+    "pluralize": "^8.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0",
+    "uuid": "^10.0.0"
+  },
+  "author": {
+    "name": "Shop"
+  },
+  "strapi": {
+    "uuid": "SHOP-75907f75-5738-46f3-ab82-fdde61567cc3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_dynamic_zone_rich_texts",
+  "info": {
+    "displayName": "Rich_text"
+  },
+  "options": {},
+  "attributes": {
+    "text_description": {
+      "type": "component",
+      "component": "shared.rich-text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

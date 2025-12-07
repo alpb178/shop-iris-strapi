@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_calendar_events",
+  "info": {
+    "displayName": "Event"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "start": {
+      "type": "time",
+      "required": true
+    },
+    "end": {
+      "type": "time",
+      "required": true
+    },
+    "repeats": {
+      "type": "enumeration",
+      "enum": [
+        "daily",
+        "weekly",
+        "biweekly",
+        "monthly",
+        "yearly"
+      ]
+    },
+    "recurringDays": {
+      "type": "json"
+    },
+    "endsAt": {
+      "type": "date"
+    }
+  },
+  "config": {}
+}

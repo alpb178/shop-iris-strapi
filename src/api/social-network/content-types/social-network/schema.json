@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_networks",
+  "info": {
+    "singularName": "social-network",
+    "pluralName": "social-networks",
+    "displayName": "Redes Sociales"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "alias": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "instagram",
+        "x",
+        "facebook",
+        "linkedin",
+        "bluesky",
+        "snapchat"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

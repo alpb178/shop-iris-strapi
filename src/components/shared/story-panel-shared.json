@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_story_panel_shareds",
+  "info": {
+    "displayName": "Story_Panel_Shared"
+  },
+  "options": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
