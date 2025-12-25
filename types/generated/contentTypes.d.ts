@@ -490,59 +490,10 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiLogProductLogProduct extends Struct.CollectionTypeSchema {
-  collectionName: 'log_products';
-  info: {
-    displayName: 'Log Product';
-    pluralName: 'log-products';
-    singularName: 'log-product';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    description: Schema.Attribute.Text &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    locale: Schema.Attribute.String;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::log-product.log-product'
-    >;
-    product: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    publishedAt: Schema.Attribute.DateTime;
-    time: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiLogLog extends Struct.CollectionTypeSchema {
   collectionName: 'logs';
   info: {
-    displayName: 'Log';
+    displayName: 'Logs';
     pluralName: 'logs';
     singularName: 'log';
   };
@@ -1329,7 +1280,6 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::faq.faq': ApiFaqFaq;
       'api::global.global': ApiGlobalGlobal;
-      'api::log-product.log-product': ApiLogProductLogProduct;
       'api::log.log': ApiLogLog;
       'api::logo.logo': ApiLogoLogo;
       'api::page.page': ApiPagePage;
