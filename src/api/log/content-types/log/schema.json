@@ -4,7 +4,7 @@
   "info": {
     "singularName": "log",
     "pluralName": "logs",
-    "displayName": "Log"
+    "displayName": "Logs"
   },
   "options": {
     "draftAndPublish": true
